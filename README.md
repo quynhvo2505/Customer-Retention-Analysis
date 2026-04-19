@@ -1,7 +1,6 @@
 # 📊 A Cohort-Based Customer Retention Analysis for E-Commerce Growth
 
-**Author:** Quynh Vo (Data Analyst)
-**Date:** 2025
+**Author:** Quynh Vo 
 **Tools Used:** Python (Google Colab)
 - **Python:** pandas, seaborn, matplotlib, datetime
 
