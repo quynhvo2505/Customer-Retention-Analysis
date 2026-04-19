@@ -1,6 +1,7 @@
 # 📊 A Cohort-Based Customer Retention Analysis for E-Commerce Growth
 
-**Author:** Quynh Vo 
+**Author:** Quynh Vo
+**Date:** 2026
 **Tools Used:** Python (Google Colab)
 - **Python:** pandas, seaborn, matplotlib, datetime
 
@@ -16,12 +17,13 @@
 
 ## 🚀 Executive Summary
 
-This project uses **cohort analysis** on 2022 e-commerce data to measure customer retention, compare loyalty patterns between **Corporate and Consumer segments**, and identify which **income group** delivers the most sustainable profit over time.
+This project uses **cohort analysis** on e-commerce data from 2020–2023 to measure customer retention, compare loyalty patterns between **Corporate and Consumer segments**, and identify which **income group** delivers the most sustainable profit over time.
 
 The analysis answers three core questions:
 - How well does this business retain customers after first purchase?
 - Do Corporate customers behave differently from Consumer customers?
 - Which income group (Low / Mid / High) is the most valuable to retain long-term?
+
 
 ## 📌 Background & Objectives
 
@@ -37,6 +39,7 @@ Cohort analysis groups customers by their first purchase month and tracks how ma
 2. Compare retention patterns between Corporate and Consumer customer segments
 3. Identify which income band (Low / Mid / High) delivers the most sustainable retention and profit over time
 
+
 ## 🕵🏼‍♂️ Who Is This Project For?
 
 - **CRM & Marketing Managers** — to design re-engagement campaigns timed to the business's natural purchase cycle
@@ -46,13 +49,14 @@ Cohort analysis groups customers by their first purchase month and tracks how ma
 
 ## 📂 Dataset Description
 
-**Period analyzed:** 2022 (cohort acquisition year)
+**Dataset Period:** 2020–2023 (cohort analysis focuses on 2022 acquisition cohorts)
 **Format:** CSV → Python (Google Colab)
 
 | Table | Key Fields Used |
 |---|---|
 | `Customer.csv` | CustomerID, AnnualIncome |
 | `EcomSales.csv` | CustomerID, OrderDate, Profit, Segment |
+
 
 **Income Band Definition (based on AnnualIncome distribution):**
 
@@ -61,7 +65,6 @@ Cohort analysis groups customers by their first purchase month and tracks how ma
 | Low | Below $40,000 |
 | Mid | $40,000 – $90,000 |
 | High | Above $90,000 |
-
 
 ## 🔧 Data Processing & Methodology
 
@@ -81,6 +84,7 @@ Cohort analysis groups customers by their first purchase month and tracks how ma
 - Assigned Low / Mid / High income bands
 - Built separate retention heatmaps for each income band
 
+
 ## 🗯️ Defining Key Questions Before Analysis
 
 - What is the Month 1 retention rate — do customers come back the very next month?
@@ -90,9 +94,10 @@ Cohort analysis groups customers by their first purchase month and tracks how ma
 - Which income group has the highest long-term retention rate?
 - Which income group is the most sustainable in volume over time?
 
+
 ## 📊 Key Insights & Visualizations
 
-### I. Overall Cohort Retention Analysis (2022)
+### I. Overall Cohort Retention Analysis — 2022 Acquisition Cohorts
 
 **📌 Key Findings:**
 
@@ -165,6 +170,7 @@ Cohort analysis groups customers by their first purchase month and tracks how ma
 | Growth Team | 📈 Grow the High-income Base | High-income (>$90K) shows the strongest loyalty (up to 6.9% at Month 10) but is too small to drive volume alone | Invest in **acquiring more High-income customers** to build long-term retention upside alongside the Mid-income base |
 | Marketing Manager | 🚫 Limit Budget on Low-income After Month 6 | Low-income customers fade sharply after Month 6 with minimal returns beyond Month 8 | Focus Low-income re-engagement within the first 6 months only — do not invest in long-term retention campaigns for this group |
 
+
 ## 🗂️ Project Structure
 
 ```
@@ -176,10 +182,3 @@ Cohort analysis groups customers by their first purchase month and tracks how ma
 └── README.md                             # Project documentation
 ```
 
-
-## 🚀 How to Run
-
-1. Upload all four CSV files to your Google Drive.
-2. Open `Customer_Retention_Analysis.ipynb` in Google Colab.
-3. Mount your Drive and update the file paths in **Section 2**.
-4. Run all cells sequentially — outputs include cohort heatmaps for overall, Corporate vs. Consumer, and income band comparisons.
