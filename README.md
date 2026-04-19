@@ -53,8 +53,6 @@ Cohort analysis groups customers by their first purchase month and tracks how ma
 |---|---|
 | `Customer.csv` | CustomerID, AnnualIncome |
 | `EcomSales.csv` | CustomerID, OrderDate, Profit, Segment |
-| `Product.csv` | (loaded, used for context) |
-| `Region.csv` | (loaded, used for context) |
 
 **Income Band Definition (based on AnnualIncome distribution):**
 
